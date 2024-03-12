@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{69c381cb-a3a4-4345-80ed-efc4d123bee9}</ProjectGuid>
-    <RootNamespace>fileVect</RootNamespace>
+    <ProjectGuid>{3c2572dd-00fe-4a3d-9661-a877aee4caae}</ProjectGuid>
+    <RootNamespace>VectorsCpp</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -102,7 +102,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -127,11 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="FuncVect.c" />
-    <ClCompile Include="MainVect.c" />
+    <ClCompile Include="FuncVect.cpp" />
+    <ClCompile Include="MainVect.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="HeadVect.h" />
+    <ClInclude Include="HeaderVect.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

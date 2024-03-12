@@ -1,0 +1,3 @@
+Summ: Vector: 3 3 3 
+Subb: Vector: -1 -1 -1 
+Mult: 6

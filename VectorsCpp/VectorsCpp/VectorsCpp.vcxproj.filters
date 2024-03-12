@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MainVect.c">
+    <ClCompile Include="MainVect.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="FuncVect.c">
+    <ClCompile Include="FuncVect.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="HeadVect.h">
+    <ClInclude Include="HeaderVect.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
   </ItemGroup>
