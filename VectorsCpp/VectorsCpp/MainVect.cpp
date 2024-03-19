@@ -3,7 +3,10 @@
 
 int main(int argc, char ** argv)
 {
+    std::ofstream off;
+    std::ifstream in;
     char* infile, * outfile;
+
     if (argc < 4)
     {
         std::cout << "Wrong arguments";
@@ -11,15 +14,22 @@ int main(int argc, char ** argv)
     }
     infile = argv[2];
     outfile = argv[3];
+
     Vect v1, v2;
-    fill(infile, v1, v2);
+
+    in.open(infile);
+    in >> v1 >> v2;
+    in.close();
+
     std::cout << v1;
     std::cout << v2;
+
     Vect summ = v1 + v2, subb = v1 - v2;
     double mult = v1 * v2;
-    write(outfile, summ, subb, mult);
-    std::cout << summ;
-    std::cout << subb;
-    std::cout << mult;
+
+    off.open(outfile);
+    off << summ << subb << mult;
+    off.close();
+
     return 0;
 }
