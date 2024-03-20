@@ -3,22 +3,19 @@
 #include "HeadVect.h"
 
 
-
-
 void main(int argc, char** argv[])
 {
-    int n1, n2, g;
+    int n1, n2;
     double multt = 0;
     Tvect v1, v2, s1, s2;
     char* infile, * outfile;
-    if (argc < 4)
+    if (argc < 3)
     {
         printf("Incorrect arg for cmd!");
         return 1;
     }
-    g = atoi(argv[1]);
-    infile = argv[2];
-    outfile = argv[3];
+    infile = argv[1];
+    outfile = argv[2];
     fill(infile, &v1, &v2);
     s1 = summ(&v1, &v2);
     s2 = subb(&v1, &v2);
